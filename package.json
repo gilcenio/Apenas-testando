@@ -3,8 +3,9 @@
   "author": "minimals.cc",
   "licence": "MIT",
   "version": "3.0.0",
-  "private": true,
+  "private": false,
   "type": "module",
+  "homepage": "https://github.com/gilcenio/Apenas-testando",
   "scripts": {
     "dev": "vite",
     "start": "vite preview",

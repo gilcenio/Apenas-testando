@@ -8,6 +8,7 @@ import react from '@vitejs/plugin-react-swc';
 const PORT = 3039;
 
 export default defineConfig({
+  base: '/Apenas-testando/',
   plugins: [
     react(),
     checker({
