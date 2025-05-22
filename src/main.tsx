@@ -8,17 +8,22 @@ import { ErrorBoundary } from './routes/components';
 
 // ------------------------------
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      Component: () => (
+        <App>
+          <Outlet />
+        </App>
+      ),
+      errorElement: <ErrorBoundary />,
+      children: routesSection,
+    },
+  ],
   {
-    Component: () => (
-      <App>
-        <Outlet />
-      </App>
-    ),
-    errorElement: <ErrorBoundary />,
-    children: routesSection,
-  },
-]);
+    basename: '/Apenas-testando/',  // ← aqui: seu prefixo de URL
+  }
+);
 
 const root = createRoot(document.getElementById('root')!);
 
